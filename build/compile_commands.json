@@ -1,0 +1,22 @@
+[
+{
+  "directory": "E:/scan/build",
+  "command": "C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/g++.exe    -g   -o CMakeFiles/main.dir/main.cpp.obj -c E:/scan/main.cpp",
+  "file": "E:/scan/main.cpp"
+},
+{
+  "directory": "E:/scan/build",
+  "command": "C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/g++.exe    -g   -o CMakeFiles/main.dir/util.cpp.obj -c E:/scan/util.cpp",
+  "file": "E:/scan/util.cpp"
+},
+{
+  "directory": "E:/scan/build",
+  "command": "C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/g++.exe    -g   -o CMakeFiles/main.dir/scan.cpp.obj -c E:/scan/scan.cpp",
+  "file": "E:/scan/scan.cpp"
+},
+{
+  "directory": "E:/scan/build",
+  "command": "C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/g++.exe    -g   -o CMakeFiles/main.dir/parse.cpp.obj -c E:/scan/parse.cpp",
+  "file": "E:/scan/parse.cpp"
+}
+]

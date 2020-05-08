@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/scan/globals.h
+stdio.h
+-
+stdlib.h
+-
+ctype.h
+-
+string.h
+-
+
+E:/scan/main.cpp
+globals.h
+E:/scan/globals.h
+util.h
+E:/scan/util.h
+scan.h
+E:/scan/scan.h
+parse.h
+E:/scan/parse.h
+analyze.h
+E:/scan/analyze.h
+cgen.h
+E:/scan/cgen.h
+
+E:/scan/parse.h
+
+E:/scan/scan.h
+
+E:/scan/util.h
+
