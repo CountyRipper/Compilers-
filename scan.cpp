@@ -59,8 +59,8 @@ static struct
     } reservedWords[MAXRESERVED]
    = {{"if",IF},{"then",THEN},{"else",ELSE},{"end",END},
       {"repeat",REPEAT},{"until",UNTIL},{"read",READ},
-      {"write",WRITE}};
-
+      {"write",WRITE},{"while",WHILE}};
+//添加while状态
 /* lookup an identifier to see if it is a reserved word */
 /* uses linear search */
 static TokenType reservedLookup (char * s)

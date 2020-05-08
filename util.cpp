@@ -22,6 +22,9 @@ void printToken( TokenType token, const char* tokenString )
     case UNTIL:
     case READ:
     case WRITE:
+    case WHILE:  //增加while状态
+    case DO:
+    case ENDWHILE:
       fprintf(listing,
          "reserved word: %s\n",tokenString);
       break;
@@ -152,6 +155,8 @@ void printTree( TreeNode * tree )
         case WriteK:
           fprintf(listing,"Write\n");
           break;
+        case WhileK: //添加while状态标志
+          fprintf(listing,"While\n"); 
         default:
           fprintf(listing,"Unknown ExpNode kind\n");
           break;
