@@ -21,6 +21,7 @@ static TreeNode * assign_stmt(void);
 static TreeNode * read_stmt(void);
 static TreeNode * write_stmt(void);
 static TreeNode * while_stmt(void);//增加while的结点函数
+static TreeNode * dowhile_stmt(void);//增加dowhile节点
 static TreeNode * exp(void);
 static TreeNode * simple_exp(void);
 static TreeNode * term(void);
@@ -69,6 +70,7 @@ TreeNode * statement(void)
     case READ : t = read_stmt(); break;
     case WRITE : t = write_stmt(); break;
     case WHILE : t = while_stmt(); break; //添加while节点
+    case DO : t = dowhile_stmt(); break; // 添加dowhile
     default : syntaxError("unexpected token -> ");
               printToken(token,tokenString);
               token = getToken();
@@ -134,6 +136,16 @@ TreeNode * while_stmt(void)
   match(DO);//根据文法规则接受DO
   if(t!=NULL) t->child[1] = stmt_sequence();
   match(ENDWHILE);
+  return t;
+}
+//dowhile函数实现
+TreeNode * dowhile_stmt(void)
+{
+  TreeNode * t = newStmtNode(DowhileK);
+  match(DO);
+  if(t!=NULL) t->child[0] = stmt_sequence();
+  match(WHILE);
+  if(t!=NULL) t->child[1] = exp();
   return t;
 }
 

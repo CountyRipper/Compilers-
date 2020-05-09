@@ -157,6 +157,10 @@ void printTree( TreeNode * tree )
           break;
         case WhileK: //添加while状态标志
           fprintf(listing,"While\n"); 
+          break;
+        case DowhileK: //添加dowhile
+          fprintf(listing, "Dowhile\n");
+          break;
         default:
           fprintf(listing,"Unknown ExpNode kind\n");
           break;
