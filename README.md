@@ -1,4 +1,5 @@
-#### 编译原理课程设计
+#### Compiler Principles Project: TINY complier 编译原理课程设计
+modified the TINY complier: adding/extending 
 根据TINY编译器源代码进行修改
 
 1. 词法分析器扩展，添加string和浮点识别
